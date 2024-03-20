@@ -22,7 +22,7 @@ function convertCurrency(amount, targetCurrency) {
 }
 
 const amountInUSD = 1000;
-const targetCurrency = 'UAH';
+const targetCurrency = "UAH";
 const convertedAmount = convertCurrency(amountInUSD, targetCurrency);
 
 console.log(`${amountInUSD} USD is ${convertedAmount} in ${targetCurrency}`);
