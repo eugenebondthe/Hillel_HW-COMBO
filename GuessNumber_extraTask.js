@@ -14,8 +14,8 @@ function guessNumber(triesLeft = 3) {
   );
   userInput = parseInt(userInput);
 
-  if (isNaN(userInput) || userInput < 1 || userInput > 10) {
-    console.log("Please input the number from 1 to 10.");
+  if (isNaN(userInput) || userInput < 1 || userInput > 10 || userInput !== Math.floor(userInput)) {
+    console.log("Please input the correct number from 1 to 10.");
     guessNumber(triesLeft);
     return;
   }
