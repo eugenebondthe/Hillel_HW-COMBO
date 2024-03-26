@@ -1,6 +1,6 @@
-function guessNumber(triesLeft = 3) {
-  const randomNumber = Math.floor(Math.random() * 10) + 1;
+const randomNumber = Math.floor(Math.random() * 10) + 1;
 
+function guessNumber(triesLeft = 3) {
   if (triesLeft === 0) {
     console.log(
       "You have used all of available tries. Original number was: " +
